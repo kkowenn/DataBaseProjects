@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User List</title>
+    <link rel="stylesheet" href="/public/styles.css" />
+  </head>
+  <body>
+    <h1>List of Users</h1>
+    <nav>
+      <ul>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/register">Register</a></li>
+        <li><a href="/users">View Users</a></li>
+        <li><a href="/dashboard">Dashboard</a></li>
+      </ul>
+    </nav>
+    <table>
+      <thead>
+        <tr>
+          <th>Login</th>
+          <th>Name</th>
+          <th>Student ID</th>
+          <th>Age</th>
+          <th>School</th>
+          <th>GPA</th>
+          <th>Favorite Subject</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% users.forEach(user => { %>
+        <tr>
+          <td><%= user.login %></td>
+          <td><%= user.name %></td>
+          <td><%= user.studentId %></td>
+          <td><%= user.age %></td>
+          <td><%= user.school %></td>
+          <td><%= user.gpa %></td>
+          <td><%= user.favSubject %></td>
+          <td>
+            <form action="/delete-user" method="post" style="display: inline">
+              <input type="hidden" name="userId" value="<%= user._id %>" />
+              <button type="submit">Delete</button>
+            </form>
+            <a href="/update/<%= user._id %>">Update</a>
+          </td>
+        </tr>
+        <% }) %>
+      </tbody>
+    </table>
+    <br />
+    <a href="/register">Add New User</a>
+  </body>
+</html>

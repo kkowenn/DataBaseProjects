@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="public/styles.css" />
+  </head>
+  <body>
+    <h1>Register</h1>
+    <nav>
+      <ul>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/register">Register</a></li>
+        <li><a href="/users">View Users</a></li>
+        <li><a href="/dashboard">Dashboard</a></li>
+      </ul>
+    </nav>
+    <form action="/register" method="post">
+      <label for="login">Login Account:</label>
+      <input type="text" id="login" name="login" required /><br />
+
+      <label for="password">Password Account:</label>
+      <input type="password" id="password" name="password" required /><br />
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required /><br />
+
+      <label for="studentId">Student ID:</label>
+      <input type="text" id="studentId" name="studentId" required /><br />
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required /><br />
+
+      <label for="school">School:</label>
+      <input type="text" id="school" name="school" required /><br />
+
+      <label for="gpa">GPA:</label>
+      <input type="number" step="0.01" id="gpa" name="gpa" required /><br />
+
+      <label for="favSubject">Favorite Subject:</label>
+      <input type="text" id="favSubject" name="favSubject" required /><br />
+
+      <button type="submit">Register</button>
+    </form>
+  </body>
+</html>
