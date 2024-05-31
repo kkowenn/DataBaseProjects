@@ -6,8 +6,8 @@ const path = require("path");
 const app = express();
 const port = 3000;
 
-// Replace <password> with your actual MongoDB Atlas user password
-const mongoDBConnectionString =
+
+const mongoDBConnectionString = // Replace MongoDB Atlas user password
 
 // Connect to MongoDB Atlas
 mongoose
