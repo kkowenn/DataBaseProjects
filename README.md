@@ -10,4 +10,5 @@ The database schema includes various tables to manage users, skills, languages, 
 ![Database Schema](FreelanzeDatabaseDesign/FreelanzedatabaseDesign.png)
 
 # dashboard-web backend:
-javascripts + node.js + Express + MongaDB
+simple dashboardWebApp without ux/ui
+using javascripts + node.js + Express + MongaDB
