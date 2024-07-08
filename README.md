@@ -22,7 +22,7 @@ The database schema is meticulously designed to manage various aspects of the fr
 
 ## Dashboard-Web Backend
 this is mini project about database project.
-This section describes the backend development for a simple dashboard web application designed for administrative purposes. While the current implementation does not include a user interface (UX/UI), it is built using robust technologies to ensure functionality and scalability.
+This section describes the backend development for a simple dashboard web application designed for administrative purposes. While the current implementation does not include a user interface (UX/UI)
 
 ### Technologies Used:
 - **JavaScript**: The primary programming language used for the application.
