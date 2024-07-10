@@ -1,7 +1,7 @@
 # DataBase Projects
 
 This repository contains the comprehensive database design, It includes both 
-1. The Freelance database schema.
+1. The Freelance database schema (to develop the webApp project in colleage project).
 2. Sencond project is backend design for a dashboard web application. Detailed information about each component is provided below.
 
 ## Freelance's Database Schema
